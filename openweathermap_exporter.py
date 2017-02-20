@@ -12,7 +12,7 @@ from prometheus_client.exposition import CONTENT_TYPE_LATEST
 from prometheus_client.exposition import generate_latest
 from urllib.parse import parse_qs, urlparse
 
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 __listen_address_env_var__ = 'SMETERD_EXPORTER_LISTEN_ADDR'
 
 logging.basicConfig(format='time="%(asctime)s", level="%(levelname)s", message="%(message)s"', level=10)
