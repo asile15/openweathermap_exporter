@@ -69,7 +69,7 @@ def main():
         host = ''
         port = 8091
 
-    server = HTTPServer((host, port), WeatherExporter)
+    server = HTTPServer((host, int(port)), WeatherExporter)
     log.warning("Serving at port {}:{}".format(host, port))
 
     try:
