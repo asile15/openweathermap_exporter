@@ -5,7 +5,7 @@ WORKDIR /
 COPY openweathermap_exporter.py /
 
 RUN pip install prometheus-client requests && \
-    rm -rf * ~/.cache ~/.pip
+    rm -rf ~/.cache ~/.pip
 
 ENV SMETERD_EXPORTER_LISTEN_ADDR=0.0.0.0:8091
 
